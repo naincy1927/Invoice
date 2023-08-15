@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+
+    # app created
     'invoice',
     'invoiceDetail',
 ]
@@ -82,13 +84,15 @@ WSGI_APPLICATION = 'task.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+# connecting api to MySQl database.
 DATABASES = {
 
     'default':{
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'invoice',
         'USER': 'root',
-        'PASSWORD':'nain@1605',
+        'PASSWORD':'root',
         'HOST': 'localhost',
         'PORT':''
 
